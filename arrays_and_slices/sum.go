@@ -1,6 +1,6 @@
 package main
 
-// Sum return the sum of a given slice of integers
+// Sum returns the sum of a given slice of integers
 func Sum(numbers []int) int {
 	sum := 0
 
@@ -11,7 +11,7 @@ func Sum(numbers []int) int {
 	return sum
 }
 
-// SumAll returns the a slice with the sum of each index of the
+// SumAll returns a slice with the sum of each position of the
 // given slices
 func SumAll(numbers ...[]int) []int {
 	var sums []int
@@ -36,6 +36,8 @@ func SumAllFaster(numbers ...[]int) []int {
 	return sums
 }
 
+// SumAllTails returns the sums of the tail of the given slices in a
+// new slice
 func SumAllTails(numbers ...[]int) []int {
 	var sums []int
 
